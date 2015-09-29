@@ -1,0 +1,195 @@
+package DS2015;
+import java.util.*;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+/**
+		// Class 1
+		System.out.print("Hello World");
+		System.out.println("Hello World");
+		int a = Node.a;
+		
+//		Node node = new Node();
+//		Node nn;
+//		nn = new Node();
+//		
+//		boolean bln = true;
+//		bln = false;
+//		
+//		
+//		int b = 3;
+//		double d =   3;
+//		
+//		
+//		Integer ii = new Integer(4);
+//		Double dd = new Double(4);
+//		Character c = new Character('a');
+//		
+//		int iii = ii.intValue();
+//		double ddd = dd.doubleValue();
+		
+//		//class 2
+//		Counter c1 = new Counter(1);		
+//		c1.increase(5);
+//		c1.decrease(4);
+//		System.out.println(c1.get());
+		**/
+		/**
+//		class 3
+		int i = 3 + 4;
+		int j = i*2; // + / % - *
+		i++;
+		System.out.println(i);
+		System.out.println(i++);
+		
+
+		System.out.println(++i);
+		
+		double t = (double)i /3;// i = i+3
+		double tt =  i /3D;// i = i+3
+		System.out.println(t);
+		System.out.println(tt);
+		
+		int k = 3 * --i;
+
+		System.out.println(k);
+		
+		i = 8;
+		i *=-1;
+		
+		k = i%3;
+
+		System.out.println(k);
+		
+		i =1;
+		System.out.println( " the value of i is : " +i);
+		// if statement
+		if( i < 0){
+			// do something
+
+			System.out.println(" i is less than 0");
+		}else if( i ==0){
+			// do another thing
+
+			System.out.println( " i == 0");
+		}else if( i>100){
+
+			System.out.println(" haha,  i> 100 ");
+		}else{
+
+			System.out.println(" I will always run ,, if above conditions do nto meet");
+		}
+		
+		// 
+//		and   && 
+		// or   || 
+//		not !
+		k = 3;
+//		if(i<100 && k <2){
+//			System.out.println( "Happy world");
+//		}
+
+		if(i<100 ||  t != 2){
+			System.out.println( "Happy world");
+		}
+		**/
+		/**
+		// class 4   Switch and loops
+		
+		
+//		System.out.println(fib(5));
+		int day = 3;
+		switch(day){
+		case 1:
+			System.out.println("Today is Sunday");
+			break;
+		case 2:
+			System.out.println("Today is Monday");
+			break;
+		case 3:
+			System.out.println("Today is Tuesday");
+			break;
+		case 4:
+			System.out.println("Today is Wednesday");
+			break;
+		case 5:
+			System.out.println("Today is Thursday");
+			break;
+		case 6:
+			System.out.println("Today is Friday");
+			break;
+		case 7:
+			System.out.println("Today is Saturday");
+			break;
+		default:
+			System.err.println("Wrong day");
+			break;
+		}
+		
+		// exercise , test , school SJC Purdue, Stanford , MIT
+		String schoolName = "anything ";
+		
+		// Loop 
+		// for loop
+		int A[] = {12,4,5,6};
+		for(int i =0;i<4;i+=2){
+			System.out.print("A["+i+"] == "+A[i]+"\t");
+		}
+		int i =0 ;
+		**/
+		//
+		// for loop
+//		int A[] = {12,4,5,6, 7};
+//		for(int i =A.length-1;i>=0;i--){
+//			if(i%2==0)
+//				System.out.println("A["+i+"] == "+A[i]+"\t");
+//		}
+
+		// lab 5 
+//		int i = 3;
+//		while( i > 0){
+//			// do something
+//			// remember to update the conditional expression
+//			System.out.println(i);
+//			i--;
+//		}
+//		// 
+//		do{
+//			System.out.print(""+ i + "\t");
+//			i--;			
+//		}while(i>-10);
+		
+		// use while loop to print A[i]
+		int A[] = {1,2,4,5,7};
+		int i =0;
+		while(i<A.length){
+			System.out.print(A[i++] + "\t");
+		}
+		
+		int sum = 0;
+		i =0;
+		while(i<A.length){
+			sum += A[i++];
+		}
+	
+	// 
+	sum = 0;
+	for(int t : A){
+		sum+=t;
+	}
+
+	System.out.println("\n the sume value is " + sum);
+
+	}
+	
+	
+	
+//		public static int fib(int n) {
+//			if(n==0 || n == 1)
+//				return 1;
+//			return fib(n-1)+fib(n-2);
+//		}
+	
+	
+}

@@ -1,0 +1,11 @@
+package DS2015;
+
+public class Node {
+	  int val = 0;  
+	  public Node(){
+		  
+	  }
+	  public Node(int a){
+		  val = a;
+	  }
+}

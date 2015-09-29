@@ -1,0 +1,4 @@
+
+public class Node {
+	 public static int a = 0;
+}

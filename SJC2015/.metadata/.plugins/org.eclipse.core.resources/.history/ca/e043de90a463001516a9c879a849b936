@@ -1,0 +1,15 @@
+package DS2015;
+
+public class ListNode extends Node{
+	
+
+	  public ListNode(int a) {
+		super(a);
+		// TODO Auto-generated constructor stub
+	}
+
+	Node next ;
+	  
+}
+	
+	

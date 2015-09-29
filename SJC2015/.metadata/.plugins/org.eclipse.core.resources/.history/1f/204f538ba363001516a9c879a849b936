@@ -1,0 +1,5 @@
+package DS2015;
+
+public class ListNode extends Node{
+
+}

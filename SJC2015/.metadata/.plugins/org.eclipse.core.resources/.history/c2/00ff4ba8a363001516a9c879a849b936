@@ -1,0 +1,8 @@
+package DS2015;
+
+public class ListNode extends Node{
+	
+	
+	int b = 0;
+	
+}

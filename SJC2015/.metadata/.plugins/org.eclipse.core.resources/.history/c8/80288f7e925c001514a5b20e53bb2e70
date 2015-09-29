@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.print("Hello World");
+		System.out.println("Hello World");
+		int a = Node.a;
+		
+//		Node node = new Node();
+		Node nn;
+		nn = new Node();
+		
+		boolean bln = true;
+		bln = false;
+		
+		
+		int b = 3;
+		double d =   3;
+		
+		
+		Integer ii = new Integer(4);
+		Double dd = new Double(4);
+		Character c = new Character('a');
+		
+		int iii = ii.intValue();
+		double ddd = dd.doubleValue();
+		
+		
+	}
+
+}

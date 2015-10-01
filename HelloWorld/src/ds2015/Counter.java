@@ -1,4 +1,4 @@
-package DS2015;
+package ds2015;
 
 public class Counter {
 	private int count;

@@ -1,6 +1,5 @@
-package DS2015;
+package ds2015;
 
-import java.util.*;
 
 public class HelloWorld {
 
@@ -128,29 +127,53 @@ public class HelloWorld {
 		// nn.printHello();
 		//
 		// Class 7 - Exceptions
+//
+//		String str = "-000000123";
+//		int a = 0;
+//		int A[] ={1,2,3};
+//		Node node = null ;
+//		try {
+//			// transfer int to string
+//			a = Integer.parseInt(str);
+//			// transfer string to int
+//			String sss = ""+a; 	// method 1
+//			sss = Integer.toString(a);	// method 2
+//			
+//			a = A[-1];
+//			System.out.println(node.val );
+//		} catch (Exception e) { // NumberFormatEception IndexOutOfBoundExcetion,
+//								// NullPointerException
+////			System.out.println("Excetpions here ");
+//			e.printStackTrace();
+//		}
+////		System.out.println("The value of a is :" + a);
 
-		String str = "-000000123";
-		int a = 0;
-		int A[] ={1,2,3};
-		Node node = null ;
-		try {
-			// transfer int to string
-			a = Integer.parseInt(str);
-			// transfer string to int
-			String sss = ""+a; 	// method 1
-			sss = Integer.toString(a);	// method 2
-			
-			a = A[-1];
-			System.out.println(node.val );
-		} catch (Exception e) { // NumberFormatEception IndexOutOfBoundExcetion,
-								// NullPointerException
-//			System.out.println("Excetpions here ");
-			e.printStackTrace();
-		}
-//		System.out.println("The value of a is :" + a);
-
+		
+		ListNode head = new ListNode(0);
+		// add a node after header		
+		ListNode tmp = new ListNode(1);
+		tmp.next = head.next;
+		head.next = tmp;
+		
+		// add to the second position
+		ListNode pointer = head.next; // will need more about checking null
+		if(pointer.next != null)
+			pointer.next = pointer.next.next;
+		
+		// delete the first node 
+		if(head != null)
+			head = head.next;
+		
+		// delete the second node
+		pointer = head.next;
+		
+		pointer = head.next;
+		
+		//print the whole list
+		
+		
 	}
-
+	
 	// public static int fib(int n) {
 	// if(n==0 || n == 1)
 	// return 1;

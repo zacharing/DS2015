@@ -1,0 +1,34 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ListNode header = new ListNode(); // imaging this is Tiger
+		// insert at first 
+		ListNode sarah = new ListNode(3);
+		sarah.next = header.next;
+		header.next= sarah;
+		
+
+		ListNode n1 = new ListNode(3);
+		n1.next = header.next;
+		header.next= n1;
+		
+		
+
+		ListNode n2 = new ListNode(3);
+		n2.next = header.next;
+		header.next= n2;
+		
+
+		ListNode n2 = new ListNode(3);
+		sarah.next = header.next;
+		header.next= n2;
+		
+		// how to delete the first student
+		if(header.next != null)
+			header.next  = header.next.next;
+		
+	}
+
+}

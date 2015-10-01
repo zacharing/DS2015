@@ -1,8 +1,8 @@
-package DS2015;
+package ds2015;
 
 public class ListNode extends Node{
 
-	Node next ;
+	ListNode next ;
 
 	  public ListNode() {
 		  super();

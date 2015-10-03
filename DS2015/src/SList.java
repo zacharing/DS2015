@@ -1,7 +1,7 @@
 
 public class SList {
 	private ListNode header;
-	private int count = 0;
+	private int size = 0;
 	
 	
 	public SList(){
@@ -11,7 +11,7 @@ public class SList {
 	}
 	
 	public int getCount(){
-		return count;
+		return size;
 	}
 	
 	public void delFirst(){

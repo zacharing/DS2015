@@ -1,11 +1,11 @@
 
 public class SList {
-	private ListNode header;
+	private SListNode header;
 	private int size = 0;
 	
 	
 	public SList(){
-		header = new ListNode();
+		header = new SListNode();
 		// only for circular list
 		// header.next = header;
 	}
@@ -20,13 +20,13 @@ public class SList {
 	}
 	
 	public void addFirst(int x){
-		ListNode tmp = new ListNode(x);
+		SListNode tmp = new SListNode(x);
 		tmp.next = header.next;
 		header.next= tmp;
 	}
 	
 	public void printList(){// print the whole list	
-		ListNode runner = header;
+		SListNode runner = header;
 		while(runner.next != null){
 			System.out.print(""+runner.next.val + "\t" );
 			runner = runner.next;
@@ -36,7 +36,7 @@ public class SList {
 	
 	public int getSum(){
 		int total = 0;
-		ListNode runner = header;
+		SListNode runner = header;
 		while(runner.next != null){
 			total+=runner.next.val;
 			runner = runner.next;

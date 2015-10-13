@@ -1,6 +1,6 @@
 public class MergeSort{
     public static void main(String[] args){
-        int[] A = { 4, 2, 9, 6, 23, 12, 34, 0, 1 };
+        int[] A = { 9,5,8,4,7,3};
         mergeSort(A);
     }
 
@@ -27,7 +27,7 @@ public class MergeSort{
         B[B.length-1] = Integer.MAX_VALUE;
         // create C
         int C[] = new int[right-mid+1];
-        for(int i =0;i<C.length-1;i++) 
+        for(int i =0;i<C.length-1;i++)
             C[i] = A[mid+1+i];
         C[C.length-1] = Integer.MAX_VALUE;
 
@@ -38,13 +38,13 @@ public class MergeSort{
                 A[i]=B[iB++];
             else
                 A[i] = C[iC++];
-            // printNumbers(A);
+            printNumbers(A);
     }
 
-    // private static void printNumbers(int[] input) {          
-    //     for (int i = 0; i < input.length; i++) {
-    //         System.out.print(input[i] + "\t");
-    //     }
-    //     System.out.println();
-    // }
+    private static void printNumbers(int[] input) {
+        for (int i = 0; i < input.length; i++)
+            System.out.print(input[i] + "\t");
+        
+        System.out.println();
+    }
  }

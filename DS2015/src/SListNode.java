@@ -7,7 +7,9 @@ public class SListNode {
     }
     
     public SListNode(int x){
-	val = x;
-	next = null;
+		val = x;
+		next = null;
     }
+    
+    
 }

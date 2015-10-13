@@ -43,4 +43,50 @@ public class SList {
 		}
 		return total;
 	}
+	
+	
+	public SList cloneList2(SList oldList){
+		//The idea of this clone is to run the list and insert at the beginning twice
+		// the first time, we create the new node and get the result in reverse order
+		// the second time, we reverse that list
+		SListNode tmpHeader = new SListNode();
+		SListNode runner=oldList.header.next;
+		// create and insert inversely 
+		while(runner!=null){
+			SListNode newNode = new SListNode(runner.val);
+			// insert at beginning
+			newNode.next = tmpHeader.next;
+			tmpHeader.next = newNode;			
+			runner = runner.next;			
+		}
+		// reverse this list
+		SList result = new SList();
+		while(tmpHeader.next!=null){
+			// create a pointer to save this first node
+			SListNode tmp = tmpHeader.next;	
+			// detach this first node
+			tmpHeader.next  = tmp.next;			
+			// insert at beginning of the result list
+			tmp.next = result.header.next;
+			result.header.next = tmp;			
+		}		
+		return result;
+	}
+
+	public SList cloneList(SList oldList){
+		SList result = new SList();
+		SListNode runner=oldList.header.next;
+		SListNode tail = result.header;
+
+		// create and insert inversely 
+		while(runner!=null){
+			SListNode newNode = new SListNode(runner.val);
+			// insert at beginning
+			tail.next = newNode;
+			tail = tail.next;
+			runner = runner.next;				
+		}		
+		return result;	
+	}
+	
 }

@@ -1,0 +1,75 @@
+In this homework, you are expected to code 2 parts, with each worth 50 points out of 100.
+There is also another one that you can finish to earn 30 extra points.
+
+NOTE:
+	Do NOT modify the Testhelper.java file, since it will be used to test your code.
+	You can also use it to test yours.
+
+-------------------part 1-------------------------------------
+
+In this homework, you are expected to solve the problem C-5.18 on textbook, Page 222.
+
+
+Write the short recursive java method that determines if a string s is a palindrome,
+that it, it is equals to its reverse.
+Examples of palindromes includes 'racecar' and 'gohangasalamimalasangnahog'.
+
+Note:
+You can assume that the inputs are all characters from a to z.
+
+
+Some test cases are summarized as follows:
+
+s	Expected Value	Description
+''	True	empty string
+'a'	True	single character
+'aa'	True	2 chars, palindrome
+'ab'	False	2 chars, not palindrome
+'aba'	True	3 chars, palindrome
+'abc'	False	3 chars, not palindrome
+'redder'	True	longer, even, palindrome
+'renter'	False	longer, even, not palindrome
+'racecar'	True	longer, odd, palindrome
+'banana'	False	longer, odd, not palindrome
+
+
+
+You goal is to finish the method 
+	public static boolean isPalindrome(String s){}
+in Main.java  file
+-----------------------------------------------end of part 1-----------------
+
+-------------------------begin of part 2-----------------------------------
+This problem is the C-5.25 on page 223 of our textbook.
+In this file, I have provide you the DList and DListNode definition, 
+which are exactly what we have created at class.
+
+C-5.25
+Describe a fast recursive algorithm for reversing a singly linked list L, 
+so that the ordering of the nodes becomes opposite of what it was before.
+
+You goal is to finish the method 
+	public static void reverseList(String s){}
+in Main.java  file
+
+-----------------------------------------------end of part 2-----------------
+
+----------------------------begin of bonus question-----------------
+In part 1, we use recursive way to test the palindrome, 
+and we also limit the string to contains only the lower case characters.
+
+Can you finish 
+	public static boolean isPalindrome2(String s){
+		// finish this code by yourself.
+		}
+using the non-recursive way?
+And also, the testing is case sensitive, and may includes special characters like: '*&^%$#@!)(~<>?:".
+But when testing palindrome, these are not counted.
+
+Therefore, 
+"a*"    return   True
+
+
+-----------------------------------------------end of bonus question-----------------
+
+
